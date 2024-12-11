@@ -32,7 +32,6 @@ class MainActivity : AppCompatActivity() {
         val images = listOf(
             R.drawable.image1,
             R.drawable.image2,
-            R.drawable.image3
         )
 
         // Set adapter untuk ViewPager2
@@ -93,11 +92,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         findViewById<ImageButton>(R.id.button3).setOnClickListener {
-            openWebView("https://www.youtube.com/watch?v=05QAqhiP3RQ")
+            openWebView("https://informatika.digital/")
         }
 
         findViewById<ImageButton>(R.id.button4).setOnClickListener {
-            openWebView("https://www.remove.bg/id")
+            openWebView("https://gemini.google.com/")
         }
 
         findViewById<ImageButton>(R.id.button5).setOnClickListener {
@@ -105,7 +104,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         findViewById<ImageButton>(R.id.button6).setOnClickListener {
-            openWebView("https://www.instagram.com/")
+            openWebView("https://drive.google.com/drive/")
         }
     }
 
@@ -130,12 +129,6 @@ class MainActivity : AppCompatActivity() {
                     // Navigasi ke NotesActivity
                     val intent = Intent(this, NotesActivity::class.java)
                     startActivity(intent)
-                    true
-                }
-                R.id.nav_profile -> {
-                    // Navigasi ke ProfileActivity (jika ada)
-                    // val intent = Intent(this, ProfileActivity::class.java)
-                    // startActivity(intent)
                     true
                 }
                 else -> false
